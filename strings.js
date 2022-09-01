@@ -22,6 +22,7 @@ for(var i = 0; i < phrase.length; i++)
     var names ="Mark,Bob,Tom,Jerry,Mary,Charles"; //take string and split
     var moreNames = names.split(',');
     document.write("<br/");
+
     for(var x = 0; x < moreNames.length; x++)
     {
         document.write(moreNames[x]);
@@ -36,3 +37,9 @@ for(var i = 0; i < phrase.length; i++)
         document.write(moreNames[x]);
         document.write("<br/>");
     }
+
+    function stringToArray(input){
+        splitInput = input.split(' ');
+        return splitInput;
+      }
+      

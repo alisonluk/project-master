@@ -32,3 +32,17 @@ function subtractNumbers(x,y)
 {
     return(x-y);
 }
+
+function greet (name, owner) { // function = greet takes two arguments
+    let result = "";
+    if (name == owner)
+    {
+       result = "Hello boss"
+    }
+    else 
+    {
+       result = "Hello guest"
+    }
+    return result;
+  }
+  greet("Daniel","Daniel")
