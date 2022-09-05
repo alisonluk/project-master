@@ -157,14 +157,14 @@ while(x < 11)
 document.write("-------------");
 //do loop  iterates once do what ever is in brackets while condition is true
 //while loop iterates only when condition is true
-var y=0;
+var y = 0;
 do {
     document.write(y+ "<br/>");
     y++; //increment
-}while( y < 15);
+} while( y < 15);
 
-//for loop
-// i=0 initialisation, decalre the count
+//for loop , used more as its more simple e.g. uses two lines compared to do /while loops
+// i=0 initialisation, declare the count
 // i< 101 = continunation condition , continues  iterating until condition is false
 // i++ counter, how we counting the loop
 for (var i=0; i < 101; i++) // count backwards five then set coutner i = i-5
@@ -181,4 +181,15 @@ while(ui != "xxx")
     {
     document.write(ui + "<br/>");
     }
+}
+
+//nested loops , a loop into a loop
+
+var a = 1;
+
+for (var a = 1; a <=100; a = a+10) {
+    for (var b = a; b < a +10; b++) { //value a and b is similar 
+    document.write(b + " ");
+    }
+    document.write("</br>");
 }
